@@ -1,5 +1,6 @@
 package Dominio;
 import java.util.Scanner;
+import Dominio.*;
 
 
 
@@ -11,6 +12,10 @@ public class main {
 	public static void main(String[] args) 
 	
 	{
+		
+		 CrearArchivo file = new CrearArchivo();
+		file.Creararchivo();
+		/*
 		while(true)
 		{
 		Controller con= Controller.getController();
@@ -28,6 +33,9 @@ public class main {
 		System.out.print("Comentarios");
 		con.ListComentario();
 		}
+		*/
+		
+		
 	
 		
 		
