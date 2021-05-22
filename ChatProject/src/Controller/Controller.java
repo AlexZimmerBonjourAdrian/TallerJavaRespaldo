@@ -81,6 +81,23 @@ public class Controller {
 		
 	}
 	*/
+	
+	
+	public void ListUsuario()
+	{
+		for(int i=ListUser.size() - 1; 0 <= i ; i--)
+		{
+			//if(ListChat.isEmpty() != false)
+			//{
+				
+				
+			//System.out.print("Entra");
+			System.out.print(ListUser + "\n");
+			//}
+		}
+		
+	}
+	
 	public void ListComentario()
 	{
 		for(int i=ListChat.size() - 1; 0 <= i ; i--)
@@ -93,9 +110,32 @@ public class Controller {
 			System.out.print(ListChat.get(i).getChat() + "\n");
 			//}
 		}
-		
-		
 			
 	}
 	
+	private void setEditCoentarie(String NickName, String Commentario)
+		{
+		  for (Chat element : ListChat){
+		         if (element.getNameUser() == NickName)
+		         {
+		              element.seChat(NickName);
+		         }
+		  }
+	}
+	
+	private void SetNickNameUser(String NickName, String newNickName)
+	{
+		for(Usuario element : ListUser)
+			if(element.GetNickName() == NickName)
+		{
+			element.SetNickName(newNickName);
+		}
+		for(Chat element : ListChat)
+		{
+			if(element.getNameUser() == NickName)
+			{
+			element.setNameUser(newNickName);
+			}
+		}
+	}
 }
