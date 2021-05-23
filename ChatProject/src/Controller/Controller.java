@@ -26,9 +26,13 @@ public class Controller {
 	}
 	
 	
-	
-	
-
+	/*
+	public Controller(ArrayList<Usuario> User, ArrayList<Chat> Chat)
+	{
+		this->ListChat = chat;
+		this->ListUser = User;
+	}
+*/
 	public void RealizarPublicacion(String NickName, String Chat )
 	{
 		ChatIndex += 1;
@@ -82,12 +86,22 @@ public class Controller {
 	}
 	*/
 	
+	public ArrayList<Chat> getChats()
+	{
+		return this.ListChat;
+	}
+	
+	public ArrayList<Usuario> getUsuario()
+	{
+		return this.ListUser;
+	}
+	
 	
 	public void ListUsuario()
 	{
 		for(int i=ListUser.size() - 1; 0 <= i ; i--)
 		{
-			//if(ListChat.isEmpty() != false)
+			//if(ListChaIt.isEmpty() != false)
 			//{
 				
 				
@@ -98,18 +112,21 @@ public class Controller {
 		
 	}
 	
-	public void ListComentario()
+	public String ListComentario()
 	{
 		for(int i=ListChat.size() - 1; 0 <= i ; i--)
 		{
-			//if(ListChat.isEmpty() != false)
-			//{
+			if(ListChat.isEmpty() != false)
+			{
 				
 				
 			//System.out.print("Entra");
 			System.out.print(ListChat.get(i).getChat() + "\n");
-			//}
+			return ListChat.get(i).getChat();
+			}
 		}
+		return "";
+	
 			
 	}
 	
@@ -139,5 +156,7 @@ public class Controller {
 		}
 	}
 	
+	
+
 	
 }
