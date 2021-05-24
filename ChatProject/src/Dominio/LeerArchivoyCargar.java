@@ -2,32 +2,41 @@ package Dominio;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Scanner;
+
+import Controller.Controller;
 
 public class LeerArchivoyCargar {
 	
-	public void LeerArchivoyCargar(ArrayList<Chat>ListChat )
+	public void LeerArchivoyCargarlo()
 	{
+		Controller con= Controller.getController();
 		String ruta = "C:\\Users\\Alex2\\Desktop/File.txt";
 		File myObj = new File(ruta);
 		try {
-			
+		
 			Scanner myReader = new Scanner(myObj);
 			while(myReader.hasNextLine())
 			{
-				
+				String User=" ";
+				String Chat= " ";
 				String data = myReader.nextLine();
 				//System.out.print(data + "\n");
-				if(data.contains("<User>") && data.contains("<Chat>"))
-				{/*
-					for(Chat element: ListChat)
-					{
-						element.setNameUser(data);
-					}
-					*/
+				if(data.contains("<User>"))
+				{
+					User=data + "\n";
+					//System.out.print(User);
+					
 				}
 				
+				if(data.contains("<Chat>"))
+				{
+					Chat=data + "\n";
+					//System.out.print(Chat);
+				}
+				
+				con.RealizarPublicacion(User,Chat);
+				//con.ListComentario();
 			}
 			
 			myReader.close();

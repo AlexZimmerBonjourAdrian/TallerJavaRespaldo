@@ -2,7 +2,6 @@ package Controller;
 
 
 import Dominio.Chat;
-import java.util.Arrays;
 import java.util.ArrayList;
 import Dominio.Usuario;
 import Dominio.*;
@@ -112,7 +111,7 @@ public class Controller {
 		
 	}
 	
-	public String ListComentario()
+	public void ListComentario()
 	{
 		for(int i=ListChat.size() - 1; 0 <= i ; i--)
 		{
@@ -122,10 +121,10 @@ public class Controller {
 				
 			//System.out.print("Entra");
 			System.out.print(ListChat.get(i).getChat() + "\n");
-			return ListChat.get(i).getChat();
+			//return ListChat.get(i).getChat();
 			}
 		}
-		return "";
+		
 	
 			
 	}

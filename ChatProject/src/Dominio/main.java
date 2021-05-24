@@ -3,8 +3,7 @@ import java.util.Scanner;
 
 //import com.sun.tools.javac.util.Context.Key;
 
-import java.awt.event.KeyAdapter ;    
-import java.awt.event.KeyEvent ;
+
 import Dominio.*;
 
 
@@ -21,9 +20,11 @@ public class main {
 	{
 		
 		Controller con= Controller.getController();
+		LeerArchivoyCargar FileRead= new LeerArchivoyCargar();
 		//System.out.print("Precione Ctrl para salir ");
+		
 		int id = 1;
-		/*
+		
 		while(id <= 3)
 		{
 		//Controller con= Controller.getController();
@@ -42,14 +43,18 @@ public class main {
 		con.ListComentario();
 		id++;
 		}
-		*/
-		 CrearArchivo file = new CrearArchivo();
-		file.Creararchivo(Controller.getController().getUsuario(),Controller.getController().getChats());
-		LeerArchivoyCargar FileRead= new LeerArchivoyCargar();
-		FileRead.LeerArchivoyCargar(element.getNameUser());
+		
+		// CrearArchivo file = new CrearArchivo();
+		//file.Creararchivo(Controller.getController().getUsuario(),Controller.getController().getChats());
 	
-		
-		
+		FileRead.LeerArchivoyCargarlo();
+		//con.ListUsuario();
+		//con.ListComentario();
+		for(Chat Element: con.getChats())
+		{
+			System.out.print(Element.getNameUser());
+			System.out.print(Element.getChat());
+		}
 	}
 
 }
