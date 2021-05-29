@@ -1,0 +1,25 @@
+<h1>Bienvenido!!</h1>
+<form [formGroup]="USU">
+    <label>
+        Usuario:
+        <input type="text" formControlName="Usuario" />
+    </label>
+    <label>
+        Contraseña:
+        <input type="password" formControlName="Contrasenia" />
+    </label>
+</form>
+<!-- <button (click)="Mandar()">Mandar</button> -->
+<div>
+    <button class="btn btn-social-icon btn-google mx-1" (click)="signInWithGoogle()">
+        Ingresa con google
+    </button>
+</div>
+<div>
+    No tienes cuenta?
+    <button routerLink="/registro">
+        Registrate YA!!    
+    </button>
+</div>
+<!-- <div *ngIf="user.email != null; else elseBlock">{{ user.email }}</div>
+<ng-template #elseBlock>No te haz logeado aun</ng-template> -->

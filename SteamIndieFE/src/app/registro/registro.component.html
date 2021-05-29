@@ -1,0 +1,32 @@
+<p>Registrate!! ¡¡ES GRATIS!!</p>
+<form [formGroup]="USU">
+    <label>
+        Nombre de usuario:
+        <input type="text" formControlName="Usuario" />
+    </label>
+    <label>
+        Correo electronico:
+        <input type="email" formControlName="Correo" />
+    </label>
+    <label>
+        Nick:
+        <input type="text" formControlName="Nick" />
+    </label>
+    <label>
+        Fecha de nacimiento:
+        <input type="date" formControlName="FechaNac" />
+    </label>
+    <label>
+        Codigo Postal:
+        <input type="number" formControlName="CodigoPostal" />
+    </label>
+    <label>
+        Contraseña:
+        <input type="password" formControlName="Contrasenia" />
+    </label>
+    <label>
+        Contraseña nuevamente:
+        <input type="password" formControlName="Contrasenia2" />
+    </label>
+    <button (click)="Mandar()">Registrarse</button>
+</form>
