@@ -1,8 +1,9 @@
-package com.ecodeup.bean;
+package Logic;
+
+import Logic.Comentario;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
-import java.sql.Blob;
 
 @ManagedBean(name="juego")
 @SessionScoped
@@ -11,7 +12,7 @@ public class Juego {
 	private int IdJuego;
 	private String Name;
 	private float precio=20.99f;
-	private Blob image;
+	private String image;
 	private String URLVideo;
 	private int puntaje;
 	private  Comentario[] Comentarios;
@@ -33,10 +34,10 @@ public class Juego {
 	public void setPrecio(float precio) {
 		this.precio = precio;
 	}
-	public Blob getImage() {
+	public String getImage() {
 		return image;
 	}
-	public void setImage(Blob image) {
+	public void setImage(String image) {
 		this.image = image;
 	}
 	public String getURLVideo() {
@@ -58,4 +59,11 @@ public class Juego {
 		Comentarios = comentarios;
 	}
 	
+	
+	
+	
+	
+	
+	
+
 }

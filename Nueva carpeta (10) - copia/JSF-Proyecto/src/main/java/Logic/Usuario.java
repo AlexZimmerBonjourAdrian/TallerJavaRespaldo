@@ -1,6 +1,6 @@
-package com.ecodeup.bean;
+package Logic;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class Usuario {
 	
@@ -49,4 +49,7 @@ public class Usuario {
 	}
 	
 	
+	
+	
+
 }
