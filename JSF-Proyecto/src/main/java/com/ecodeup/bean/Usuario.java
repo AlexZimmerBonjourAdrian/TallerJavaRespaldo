@@ -11,6 +11,17 @@ public class Usuario {
 	private String nombre;
 	private String apellido;
 	private Date fnac;
+	
+	
+	 public Usuario( String nombre,String apellido,String password,String nickname,Date fnac)
+	 {
+		 this.nombre=nombre;
+		 this.apellido = apellido;
+		 this.password = password;
+		 this.nickname= nickname;
+		 this.fnac = fnac;
+	 }
+	
 	public int getIdUsu() {
 		return IdUsu;
 	}
