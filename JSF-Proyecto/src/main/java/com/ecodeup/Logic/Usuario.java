@@ -1,6 +1,8 @@
-package com.ecodeup.bean;
+package com.ecodeup.Logic;
 
 import java.sql.Date;
+
+
 
 public class Usuario {
 	
@@ -13,7 +15,8 @@ public class Usuario {
 	private Date fnac;
 	
 	
-	 public Usuario( String nombre,String apellido,String password,String nickname,Date fnac)
+	/*
+	 public Usuario( )//String nombre,String apellido,String password,String nickname,Date fnac)
 	 {
 		 this.nombre=nombre;
 		 this.apellido = apellido;
@@ -21,6 +24,7 @@ public class Usuario {
 		 this.nickname= nickname;
 		 this.fnac = fnac;
 	 }
+	 */
 	
 	public int getIdUsu() {
 		return IdUsu;

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+	
+<h:head>
+<title>Usuario JSP</title>
+
+
+</h:head>
+<p>Ingresar los datos de Usuario</p>
+
+
+<h:body>
+
+
+<h:form>
+<table>
+ 
+ <h2>Registrarse</h2>
+ 
+ 
+ 
+ <h:outputText value="Enter Text: "/>
+ <h4>Ingresar Nombre</h4>
+  <h:inputText id="textName"  rendered="true" placeHolder="Ingrese su nombre"/>
+	
+
+ <h:outputText value="Enter Text: "/>
+ <h4>Ingresar Apellido</h4>
+  <h:inputText id="textApellido"  rendered="true" placeHolder="Ingrese su Apellido"/>
+	
+	 <h:outputText value="Enter Text: "/>
+	 <h4>Ingresar Nickname</h4>
+  <h:inputText id="textNickName"  rendered="true" placeHolder="Ingrese su NickName"/>
+	
+	 <h:outputText value="Enter Text: "/>
+		 <h4>Ingresar Password</h4>
+  <h:inputText id="textPassword"  rendered="true" placeHolder="Ingrese su Password"/>
+	
+ <h:outputText value="Enter Text: "/>
+		 <h4>Ingresar Email</h4>
+  <h:inputText id="textEmail" value="#{UsuarioBean.usuario.nombre}"  rendered="true" placeHolder="Ingrese su Email" />
+	
+	 <h:outputText value="Enter Text: "/>
+		 <h4>Ingresar Fecha de Nacimiento</h4>
+	<h:inputText value="#{UsuarioBean.usuario.fnac}" rendered="true" />  
+ 
+	
+	
+	
+	<br />
+	<br />
+
+
+</table>
+</h:form>
+
+<h:button type="submit" >Mandar</h:button>
+</body>
+
+
+
+
+
+</html>

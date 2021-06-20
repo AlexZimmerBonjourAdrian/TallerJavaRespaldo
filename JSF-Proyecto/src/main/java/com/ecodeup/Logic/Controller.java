@@ -1,23 +1,26 @@
-package com.ecodeup.bean;
+package com.ecodeup.Logic;
 
 import java.sql.Date;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import com.ecodeup.bean.TestConexion;
+
+
+import com.ecodeup.Logic.*;
+import com.ecodeup.bean.*;
 public class Controller {
 	
-	Conexion conexion = new Conexion();
+	/*Conexion conexion = new Conexion();*/
 	Connection cn=null;
 	Statement stm=null;
 	//ResultSet rs = null;
 	
 	private Usuario[] usuarios;
-	private Juego[] juegos;
+	/*private Juego[] juegos;
 	private Comentario[] comentarios;
 	
-
+*/
 	
  
   

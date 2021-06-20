@@ -1,7 +1,10 @@
-package com.ecodeup.bean;
+package com.ecodeup.Logic;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+
+import com.ecodeup.bean.Comentario;
+
 import java.sql.Blob;
 
 @ManagedBean(name="juego")

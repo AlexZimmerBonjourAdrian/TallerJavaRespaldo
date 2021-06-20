@@ -1,4 +1,4 @@
-package com.ecodeup.bean;
+package com.ecodeup.Logic;
 
 import java.sql.SQLException;
 import java.sql.DriverManager;
