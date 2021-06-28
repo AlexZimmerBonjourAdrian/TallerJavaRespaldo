@@ -18,9 +18,9 @@ import com.ecodeup.Logic.Usuario;
 
 public class UsuarioBean {
 
-	private Usuario usuario = new Usuario();
+	//private Usuario usuario = new Usuario();
 	private ArrayList<Usuario> lstUsuario = new ArrayList<Usuario>();
-	
+	/*
 	public Usuario getUsuario()
 	{
 		return usuario;
@@ -46,6 +46,6 @@ public class UsuarioBean {
 	{
 		this.lstUsuario.add(this.usuario);
 	}
-	
+	*/
 	
 }

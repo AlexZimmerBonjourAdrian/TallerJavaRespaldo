@@ -10,21 +10,23 @@ public class Usuario {
 	private int IdUsu;
 	private String nickname;
 	private String password;
+	private String email;
 	private String nombre;
 	private String apellido;
 	private Date fnac;
 	
 	
-	/*
-	 public Usuario( )//String nombre,String apellido,String password,String nickname,Date fnac)
+	
+	 public Usuario( String nombre,String apellido,String email,String password,String nickname,Date fnac)//String nombre,String apellido,String password,String nickname,Date fnac)
 	 {
 		 this.nombre=nombre;
 		 this.apellido = apellido;
+		 this.email= email;
 		 this.password = password;
 		 this.nickname= nickname;
 		 this.fnac = fnac;
 	 }
-	 */
+	 
 	
 	public int getIdUsu() {
 		return IdUsu;

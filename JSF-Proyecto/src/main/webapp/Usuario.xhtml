@@ -18,9 +18,9 @@
 <table>
  
  <h2>Registrarse</h2>
- 
- 
- 
+
+ <div class="container fluid">
+ <h:panelGrid columns="3">
  <h:outputText value="Enter Text: "/>
  <h4>Ingresar Nombre</h4>
   <h:inputText id="textName" value="#{UsuarioBean.usuario.nombre}" rendered="true"  placeHolder="Ingrese su nombre"/>
@@ -47,6 +47,8 @@
 	<h:inputText value="#{UsuarioBean.usuario.fnac}" rendered="true" />  
  
 	
+	</h:panelGrid>
+	
 	
 	
 	<br />
@@ -54,9 +56,9 @@
 
 
 </table>
-<h:button type="submit" >Mandar</h:button>
+<h:comandButton actionListener="#(usuarioBean.registrar())" values="Registrar" type="registarse" />
 </h:form>
-
+</div>
 
 </body>
 

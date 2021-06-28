@@ -7,8 +7,8 @@ import com.ecodeup.Logic.Usuario;
 
 public class JuegoBean {
 
-	private Juego juego = new Juego();
-	
+	//private Juego juego = new Juego();
+	/*
 	private ArrayList<Juego> lstJuego=new ArrayList<Juego>();
 	
 	
@@ -40,5 +40,5 @@ public class JuegoBean {
 		this.lstJuego.add(this.juego);
 	}
 	
-
+*/
 }

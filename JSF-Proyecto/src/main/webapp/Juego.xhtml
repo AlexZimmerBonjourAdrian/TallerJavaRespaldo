@@ -3,12 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html">
 	
+	
 <h:head>
 <title>Usuario JSP</title>
-
+<link rel="stylesheet" type="text/css" href="WEB-INF/css/bootstrap.min.css"></link>
 
 </h:head>
-<p>Ingresar los datos de Usuario</p>
+<p>Ingresar los datos de jugego</p>
 
 
 <h:body>
@@ -20,7 +21,7 @@
  <h2>Registrarse</h2>
  
  
- 
+ <div class="container">
  <h:outputText value="Enter Text: "/>
  <h4>Ingresar Nombre</h4>
   <h:inputText id="textName"  rendered="true" placeHolder="Ingrese su nombre"/>
@@ -43,9 +44,11 @@
 
 
 </table>
-</h:form>
+
 
 <h:button type="submit" >Mandar</h:button>
+</h:form>
+</div>
 </body>
 
 
